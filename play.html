@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏 - GameHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-2xl font-bold text-[#007AFF]">GameHub</a>
+                <button onclick="history.back()" class="text-gray-600 hover:text-[#007AFF]">返回</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4">
+        <div class="aspect-w-16 aspect-h-9">
+            <iframe id="gameFrame" 
+                    class="w-full h-[80vh] border-none"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <script src="games.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取URL参数中的游戏ID
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get('game');
+            
+            // 查找游戏
+            function findGame(gameId) {
+                for (const categoryKey in gameData.categories) {
+                    const category = gameData.categories[categoryKey];
+                    const game = category.games.find(g => g.id === gameId);
+                    if (game) return game;
+                }
+                return null;
+            }
+            
+            // 加载游戏
+            const game = findGame(gameId);
+            if (game) {
+                document.title = `${game.name} - GameHub`;
+                document.getElementById('gameFrame').src = game.iframe_url;
+            } else {
+                document.body.innerHTML += '<div class="text-center text-white text-2xl mt-20">游戏不存在</div>';
+            }
+        });
+    </script>
+</body>
+</html> 
