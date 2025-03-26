@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZD645HD76"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VZD645HD76');
+    </script>
+    <title>GameHub - Your Gaming Paradise</title>
+    <link rel="canonical" href="https://yourdomain.com" />
+    <meta name="description" content="Discover and play various exciting games including puzzles, arcade, shooting, strategy, and more">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-[#007AFF]">GameHub</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-[#007AFF]">Home</a>
+                    <a href="newest.html" class="text-gray-700 hover:text-[#007AFF]">Newest Games</a>
+                    <a href="favorites.html" class="text-gray-700 hover:text-[#007AFF]">My Favorites</a>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-xl mx-8">
+                    <form id="search-form" action="search.html" method="get">
+                        <div class="relative">
+                            <input type="search" name="q" id="search-input"
+                                   class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-[#007AFF]"
+                                   placeholder="Search games...">
+                            <button type="submit" class="absolute right-3 top-2.5 text-gray-400 hover:text-[#007AFF]" title="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-gray-700" title="Menu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-gray-100">Home</a>
+                    <a href="newest.html" class="px-3 py-2 rounded hover:bg-gray-100">Newest Games</a>
+                    <a href="favorites.html" class="px-3 py-2 rounded hover:bg-gray-100">My Favorites</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="mt-20 p-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-center my-8">Welcome to GameHub</h1>
+
+            <!-- Popular Games Section -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-semibold">Popular Games</h2>
+                    <a href="hot_games.html" class="text-[#007AFF] hover:underline">View All</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="popularGames">
+                    <!-- Popular game cards will be loaded dynamically via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Game Categories Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6">Game Categories</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="categoriesGrid">
+                    <!-- Category cards will be loaded dynamically via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Newest Games Section -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-semibold">Newest Games</h2>
+                    <a href="newest.html" class="text-[#007AFF] hover:underline">View All</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="newestGames">
+                    <!-- Newest game cards will be loaded dynamically via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">© 2023 GameHub. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">About Us</a>
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+    <script>
+        // When the page loads, display categories, popular games, and newest games
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle search form submission
+            const searchForm = document.getElementById('search-form');
+            const searchInput = document.getElementById('search-input');
+            
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent form default submission
+                
+                const query = searchInput.value.trim();
+                if (!query) return;
+                
+                // Search for games
+                const results = searchGames(query);
+                
+                if (results.length === 1) {
+                    // If there's only one result, navigate directly to that game
+                    window.location.href = `play.html?game=${results[0].id}`;
+                } else if (results.length > 1) {
+                    // If there are multiple results, navigate to search results page
+                    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+                } else {
+                    // If there are no results, still navigate to search results page and show "no results found"
+                    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+                }
+            });
+            
+            // Load categories
+            const categoriesGrid = document.getElementById('categoriesGrid');
+            for (const categoryKey in gameData.categories) {
+                const category = gameData.categories[categoryKey];
+                const categoryCard = document.createElement('div');
+                categoryCard.className = 'bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow';
+                categoryCard.innerHTML = `
+                    <a href="categories/${categoryKey}.html" class="block text-center">
+                        <div class="text-4xl mb-4">${category.icon}</div>
+                        <h3 class="text-xl font-semibold mb-2">${category.name}</h3>
+                        <p class="text-gray-600">${category.description}</p>
+                    </a>
+                `;
+                categoriesGrid.appendChild(categoryCard);
+            }
+            
+            // Load popular games
+            const popularGames = getPopularGames();
+            const popularGamesContainer = document.getElementById('popularGames');
+            
+            // Only show the first 4 popular games
+            const popularGamesToShow = popularGames.slice(0, 4);
+            popularGamesToShow.forEach(game => {
+                popularGamesContainer.appendChild(createGameCard(game));
+            });
+            
+            // Load newest games
+            const newestGames = getNewestGames();
+            const newestGamesContainer = document.getElementById('newestGames');
+            
+            // Only show the first 4 newest games
+            const newestGamesToShow = newestGames.slice(0, 4);
+            newestGamesToShow.forEach(game => {
+                newestGamesContainer.appendChild(createGameCard(game));
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+        
+        // Create game card
+        function createGameCard(game) {
+            const gameCard = document.createElement('div');
+            gameCard.className = 'game-card bg-white rounded-lg shadow-md overflow-hidden';
+            gameCard.innerHTML = `
+                <div class="relative">
+                    <a href="play.html?game=${game.id}">
+                        <img src="${game.thumbnail}" alt="${game.name}" class="w-full h-48 object-cover">
+                    </a>
+                    <div class="game-actions">
+                        <button class="game-action-btn favorite-btn" data-game-id="${game.id}" title="Favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="game-action-btn share-btn" data-game-id="${game.id}" title="Share">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <a href="play.html?game=${game.id}" class="block">
+                        <h3 class="font-semibold mb-2">${game.name}</h3>
+                        <p class="text-sm text-gray-600">${game.description.substring(0, 60)}${game.description.length > 60 ? '...' : ''}</p>
+                    </a>
+                </div>
+            `;
+            
+            // Add favorite button event
+            gameCard.querySelector('.favorite-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const gameId = this.getAttribute('data-game-id');
+                toggleFavorite(gameId);
+                
+                // Update icon
+                const isFavorite = isGameFavorite(gameId);
+                this.innerHTML = isFavorite ? '<i class="fas fa-heart text-red-500"></i>' : '<i class="far fa-heart"></i>';
+            });
+            
+            // Add share button event
+            gameCard.querySelector('.share-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const gameId = this.getAttribute('data-game-id');
+                shareGame(gameId);
+            });
+            
+            // Check if already favorited and update icon
+            const gameId = game.id;
+            if (isGameFavorite(gameId)) {
+                gameCard.querySelector('.favorite-btn').innerHTML = '<i class="fas fa-heart text-red-500"></i>';
+            }
+            
+            return gameCard;
+        }
+        
+        // Favorite game functionality
+        function toggleFavorite(gameId) {
+            let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            
+            if (favorites.includes(gameId)) {
+                favorites = favorites.filter(id => id !== gameId);
+                alert('Removed from favorites');
+            } else {
+                favorites.push(gameId);
+                alert('Added to favorites');
+            }
+            
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        
+        // Check if game is favorited
+        function isGameFavorite(gameId) {
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            return favorites.includes(gameId);
+        }
+        
+        // Share game functionality
+        function shareGame(gameId) {
+            const game = getGameById(gameId);
+            if (!game) return;
+            
+            // If Web Share API is supported
+            if (navigator.share) {
+                navigator.share({
+                    title: game.name,
+                    text: game.description,
+                    url: `${window.location.origin}/play.html?game=${gameId}`
+                }).catch(err => {
+                    console.error('Share failed:', err);
+                    alert('Game link copied to clipboard');
+                    copyToClipboard(`${window.location.origin}/play.html?game=${gameId}`);
+                });
+            } else {
+                // Fallback to copying link
+                alert('Game link copied to clipboard');
+                copyToClipboard(`${window.location.origin}/play.html?game=${gameId}`);
+            }
+        }
+        
+        // Copy to clipboard helper
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+</html> 

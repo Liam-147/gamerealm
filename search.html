@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZD645HD76"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VZD645HD76');
+    </script>
+    <title>Search Results - GameHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-[#007AFF]">GameHub</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-[#007AFF]">Home</a>
+                    <a href="newest.html" class="text-gray-700 hover:text-[#007AFF]">Newest Games</a>
+                    <a href="favorites.html" class="text-gray-700 hover:text-[#007AFF]">My Favorites</a>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-xl mx-8">
+                    <form id="search-form" action="search.html" method="get">
+                        <div class="relative">
+                            <input type="search" name="q" id="search-input"
+                                   class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-[#007AFF]"
+                                   placeholder="Search games...">
+                            <button type="submit" class="absolute right-3 top-2.5 text-gray-400 hover:text-[#007AFF]" title="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-gray-700" title="Menu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-gray-100">Home</a>
+                    <a href="newest.html" class="px-3 py-2 rounded hover:bg-gray-100">Newest Games</a>
+                    <a href="favorites.html" class="px-3 py-2 rounded hover:bg-gray-100">My Favorites</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-20 p-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold my-8">Search Results: <span id="search-query"></span></h1>
+            
+            <div id="no-results" class="hidden">
+                <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                    <i class="fas fa-search text-5xl text-gray-400 mb-4"></i>
+                    <h2 class="text-2xl font-semibold mb-2">No matching games found</h2>
+                    <p class="text-gray-600 mb-6">Try using different keywords for your search</p>
+                    <a href="index.html" class="inline-block bg-[#007AFF] text-white px-6 py-2 rounded-lg hover:bg-blue-600">Browse All Games</a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="search-results">
+                <!-- Search results will be dynamically generated via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Category Filters -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white shadow-lg border-t border-gray-200 z-40 md:hidden" id="filter-bar">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-700">Filter:</span>
+            <div class="flex space-x-2 overflow-x-auto pb-2" id="mobile-categories">
+                <!-- Categories will be dynamically generated via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">© 2023 GameHub. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">About Us</a>
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 hover:text-[#007AFF]">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+    <script>
+        // Get URL parameter
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // Execute search when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get search query
+            const searchQuery = getQueryParam('q') || '';
+            document.getElementById('search-query').textContent = searchQuery;
+            document.getElementById('search-input').value = searchQuery;
+            
+            // If no search query, return to home page
+            if (!searchQuery) {
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Handle search form submission
+            const searchForm = document.getElementById('search-form');
+            
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent form default submission
+                
+                const query = document.getElementById('search-input').value.trim();
+                if (!query) return;
+                
+                // Search for games
+                const results = searchGames(query);
+                
+                if (results.length === 1) {
+                    // If there's only one result, navigate directly to that game
+                    window.location.href = `play.html?game=${results[0].id}`;
+                } else if (results.length > 1) {
+                    // If there are multiple results, refresh search results page
+                    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+                } else {
+                    // If there are no results, still navigate to search results page and show "no results found"
+                    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+                }
+            });
+            
+            // Execute search
+            const searchResults = searchGames(searchQuery);
+            displaySearchResults(searchResults);
+            
+            // Create mobile category filters
+            createMobileCategoryFilters();
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+        
+        // Display search results
+        function displaySearchResults(results) {
+            const resultsContainer = document.getElementById('search-results');
+            const noResultsMessage = document.getElementById('no-results');
+            
+            // If no results, show message
+            if (results.length === 0) {
+                resultsContainer.classList.add('hidden');
+                noResultsMessage.classList.remove('hidden');
+                return;
+            }
+            
+            // Show results
+            resultsContainer.classList.remove('hidden');
+            noResultsMessage.classList.add('hidden');
+            
+            results.forEach(game => {
+                resultsContainer.appendChild(createGameCard(game));
+            });
+        }
+        
+        // Create game card
+        function createGameCard(game) {
+            const gameCard = document.createElement('div');
+            gameCard.className = 'game-card bg-white rounded-lg shadow-md overflow-hidden';
+            gameCard.innerHTML = `
+                <div class="relative">
+                    <a href="play.html?game=${game.id}">
+                        <img src="${game.thumbnail}" alt="${game.name}" class="w-full h-48 object-cover">
+                    </a>
+                    <div class="game-actions">
+                        <button class="game-action-btn favorite-btn" data-game-id="${game.id}" title="Favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="game-action-btn share-btn" data-game-id="${game.id}" title="Share">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-0 left-0 bg-[#007AFF] text-white px-2 py-1 text-xs">
+                        ${game.category}
+                    </div>
+                </div>
+                <div class="p-4">
+                    <a href="play.html?game=${game.id}" class="block">
+                        <h3 class="font-semibold mb-2">${game.name}</h3>
+                        <p class="text-sm text-gray-600">${game.description.substring(0, 60)}${game.description.length > 60 ? '...' : ''}</p>
+                    </a>
+                </div>
+            `;
+            
+            // Add favorite button event
+            gameCard.querySelector('.favorite-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const gameId = this.getAttribute('data-game-id');
+                toggleFavorite(gameId);
+                
+                // Update icon
+                const isFavorite = isGameFavorite(gameId);
+                this.innerHTML = isFavorite ? '<i class="fas fa-heart text-red-500"></i>' : '<i class="far fa-heart"></i>';
+            });
+            
+            // Add share button event
+            gameCard.querySelector('.share-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const gameId = this.getAttribute('data-game-id');
+                shareGame(gameId);
+            });
+            
+            // Check if already favorited and update icon
+            const gameId = game.id;
+            if (isGameFavorite(gameId)) {
+                gameCard.querySelector('.favorite-btn').innerHTML = '<i class="fas fa-heart text-red-500"></i>';
+            }
+            
+            return gameCard;
+        }
+        
+        // Create mobile category filters
+        function createMobileCategoryFilters() {
+            const categoriesContainer = document.getElementById('mobile-categories');
+            const categories = Object.keys(window.gameData.categories).filter(key => Array.isArray(window.gameData.categories[key].games));
+            
+            // Add "All" option
+            const allButton = document.createElement('button');
+            allButton.className = 'px-3 py-1 bg-[#007AFF] text-white rounded-full text-sm whitespace-nowrap';
+            allButton.textContent = 'All';
+            allButton.addEventListener('click', function() {
+                const searchQuery = document.getElementById('search-input').value;
+                const results = searchGames(searchQuery);
+                
+                // Update all button styles
+                document.querySelectorAll('#mobile-categories button').forEach(btn => {
+                    btn.className = 'px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap';
+                });
+                this.className = 'px-3 py-1 bg-[#007AFF] text-white rounded-full text-sm whitespace-nowrap';
+                
+                // Display results
+                displaySearchResults(results);
+            });
+            categoriesContainer.appendChild(allButton);
+            
+            // Add category buttons
+            categories.forEach(categoryKey => {
+                const category = window.gameData.categories[categoryKey];
+                const button = document.createElement('button');
+                button.className = 'px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap';
+                button.textContent = category.name;
+                button.addEventListener('click', function() {
+                    const searchQuery = document.getElementById('search-input').value;
+                    let results = searchGames(searchQuery);
+                    
+                    // Filter by category
+                    results = results.filter(game => game.category === category.name);
+                    
+                    // Update all button styles
+                    document.querySelectorAll('#mobile-categories button').forEach(btn => {
+                        btn.className = 'px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap';
+                    });
+                    this.className = 'px-3 py-1 bg-[#007AFF] text-white rounded-full text-sm whitespace-nowrap';
+                    
+                    // Display results
+                    displaySearchResults(results);
+                });
+                categoriesContainer.appendChild(button);
+            });
+        }
+        
+        // Favorite game functionality
+        function toggleFavorite(gameId) {
+            let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            
+            if (favorites.includes(gameId)) {
+                favorites = favorites.filter(id => id !== gameId);
+                alert('Removed from favorites');
+            } else {
+                favorites.push(gameId);
+                alert('Added to favorites');
+            }
+            
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        
+        // Check if game is favorited
+        function isGameFavorite(gameId) {
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            return favorites.includes(gameId);
+        }
+        
+        // Share game functionality
+        function shareGame(gameId) {
+            const game = getGameById(gameId);
+            if (!game) return;
+            
+            // If Web Share API is supported
+            if (navigator.share) {
+                navigator.share({
+                    title: game.name,
+                    text: game.description,
+                    url: `${window.location.origin}/play.html?game=${gameId}`
+                }).catch(err => {
+                    console.error('Share failed:', err);
+                    alert('Game link copied to clipboard');
+                    copyToClipboard(`${window.location.origin}/play.html?game=${gameId}`);
+                });
+            } else {
+                // Fallback to copying link
+                alert('Game link copied to clipboard');
+                copyToClipboard(`${window.location.origin}/play.html?game=${gameId}`);
+            }
+        }
+        
+        // Copy to clipboard helper
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+</html> 

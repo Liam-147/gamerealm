@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Categories - GameHub</title>
+    <link rel="canonical" href="https://yourdomain.com/categories" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 使用与首页相同的样式 -->
+</head>
+<body>
+    <!-- 使用相同的导航栏 -->
+
+    <main class="mt-16 p-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-center my-8">Game Categories</h1>
+
+            <!-- 游戏分类列表 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 每个分类区域 -->
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Puzzle Games</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- 游戏卡片 -->
+                        <a href="javascript:void(0)" onclick="loadGame('color-fill-3d')" class="game-card">
+                            <img src="https://img.cdn.famobi.com/portal/html5games/images/tmp/ColorFill3dTeaser.jpg" 
+                                 alt="Color Fill 3D" 
+                                 class="w-full h-32 object-cover rounded-lg mb-2">
+                            <h3 class="text-sm font-medium text-center">Color Fill 3D</h3>
+                        </a>
+                        <!-- 更多游戏卡片 -->
+                    </div>
+                </section>
+                <!-- 更多分类区域 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 使用相同的页脚 -->
+
+    <!-- 游戏加载脚本 -->
+    <script>
+        function loadGame(gameId) {
+            // 这里处理iframe加载逻辑
+            const gameUrls = {
+                'color-fill-3d': 'https://play.famobi.com/color-fill-3d',
+                // 添加更多游戏
+            };
+            
+            if (gameUrls[gameId]) {
+                window.location.href = `/play.html?game=${gameId}`;
+            }
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,37 @@
+{
+  "categories": {
+    "puzzle": {
+      "name": "Puzzle Games",
+      "icon": "🧩",
+      "description": "Challenge your mind with our collection of puzzle games",
+      "games": [
+        {
+          "id": "color-fill-3d",
+          "name": "Color Fill 3D",
+          "description": "在 Color Fill 3D 中，您的目标是通过在空白处移动块来用颜色填充整个网格...",
+          "thumbnail": "/assets/images/icons/color-fill-3d.jpg",
+          "preview": "/assets/images/previews/color-fill-3d.jpg",
+          "iframe_url": "https://play.famobi.com/color-fill-3d"
+        },
+        // 更多益智游戏...
+      ]
+    },
+    "shooting": {
+      "name": "Shooting Games",
+      "icon": "🎯",
+      "description": "Test your aim in action-packed shooting games",
+      "games": [
+        {
+          "id": "western-sniper",
+          "name": "Western Sniper",
+          "description": "在西部狙击手中展现您的射击技巧...",
+          "thumbnail": "/assets/images/icons/western-sniper.jpg",
+          "preview": "/assets/images/previews/western-sniper.jpg",
+          "iframe_url": "https://play.famobi.com/western-sniper"
+        }
+        // 更多射击游戏...
+      ]
+    }
+    // 其他分类...
+  }
+} 
