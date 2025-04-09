@@ -1,0 +1,6 @@
+# 将404错误重定向到主页
+/* /index.html 200
+
+# 强制HTTPS
+http://gamerealm.space/* https://gamerealm.space/:splat 301!
+http://www.gamerealm.space/* https://gamerealm.space/:splat 301! 
