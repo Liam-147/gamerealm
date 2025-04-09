@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言测试 - GameRealm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #4caf50;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        pre {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: rgba(76, 175, 80, 0.2);
+            border: 1px solid #4caf50;
+        }
+        .error {
+            background-color: rgba(244, 67, 54, 0.2);
+            border: 1px solid #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>语言选择器测试</h1>
+        <p>当前语言: <span id="currentLang">未加载</span></p>
+        
+        <div id="status" style="display: none;"></div>
+        
+        <h2>语言选择</h2>
+        <div class="button-group">
+            <button onclick="setLanguage('zh-CN')">中文</button>
+            <button onclick="setLanguage('en-US')">English</button>
+            <button onclick="setLanguage('ja-JP')">日本語</button>
+            <button onclick="setLanguage('ko-KR')">한국어</button>
+            <button onclick="setLanguage('es-ES')">Español</button>
+            <button onclick="setLanguage('fr-FR')">Français</button>
+            <button onclick="setLanguage('de-DE')">Deutsch</button>
+            <button onclick="setLanguage('ru-RU')">Русский</button>
+            <button onclick="setLanguage('pt-BR')">Português</button>
+            <button onclick="setLanguage('it-IT')">Italiano</button>
+            <button onclick="setLanguage('ar-SA')">العربية</button>
+            <button onclick="setLanguage('hi-IN')">हिन्दी</button>
+            <button onclick="setLanguage('th-TH')">ไทย</button>
+            <button onclick="setLanguage('vi-VN')">Tiếng Việt</button>
+            <button onclick="setLanguage('id-ID')">Bahasa Indonesia</button>
+            <button onclick="setLanguage('nl-NL')">Nederlands</button>
+            <button onclick="setLanguage('tr-TR')">Türkçe</button>
+            <button onclick="setLanguage('pl-PL')">Polski</button>
+        </div>
+        
+        <h2>本地存储内容</h2>
+        <pre id="storageContent">未加载</pre>
+        
+        <h2>语言文件内容</h2>
+        <pre id="langFileContent">未加载</pre>
+        
+        <button onclick="window.location.href='../index.html'">返回首页</button>
+        <button onclick="clearLanguage()">清除语言设置</button>
+        <button onclick="verifyAllLanguages()">验证所有语言文件</button>
+    </div>
+
+    <script>
+        // 页面加载时显示当前语言设置
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDisplay();
+        });
+        
+        // 更新显示当前语言和本地存储
+        function updateDisplay() {
+            const currentLang = localStorage.getItem('gameRealmLanguage') || 'zh-CN';
+            document.getElementById('currentLang').textContent = currentLang;
+            
+            // 显示本地存储内容
+            const storageContent = document.getElementById('storageContent');
+            storageContent.textContent = `gameRealmLanguage: ${currentLang}`;
+            
+            // 加载当前语言文件内容
+            loadLanguageFile(currentLang);
+        }
+        
+        // 设置语言
+        function setLanguage(lang) {
+            localStorage.setItem('gameRealmLanguage', lang);
+            showStatus(`已将语言设置为: ${lang}`, 'success');
+            updateDisplay();
+        }
+        
+        // 清除语言设置
+        function clearLanguage() {
+            localStorage.removeItem('gameRealmLanguage');
+            showStatus('已清除语言设置，使用默认语言: zh-CN', 'success');
+            updateDisplay();
+        }
+        
+        // 加载语言文件内容
+        function loadLanguageFile(lang) {
+            const langFileContent = document.getElementById('langFileContent');
+            langFileContent.textContent = '加载中...';
+            
+            fetch(`../${lang}.json`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`语言文件不存在: ${lang}.json`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    langFileContent.textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    langFileContent.textContent = `错误: ${error.message}`;
+                    showStatus(`加载语言文件失败: ${error.message}`, 'error');
+                });
+        }
+        
+        // 验证所有语言文件
+        function verifyAllLanguages() {
+            const languages = [
+                'zh-CN', 'en-US', 'ja-JP', 'ko-KR', 'es-ES', 'fr-FR', 'de-DE', 'ru-RU', 
+                'pt-BR', 'it-IT', 'ar-SA', 'hi-IN', 'th-TH', 'vi-VN', 'id-ID', 'nl-NL', 
+                'tr-TR', 'pl-PL'
+            ];
+            
+            const langFileContent = document.getElementById('langFileContent');
+            langFileContent.textContent = '验证所有语言文件中...\n\n';
+            
+            let successCount = 0;
+            let failedCount = 0;
+            let results = '';
+            
+            // 对每个语言文件进行检查
+            Promise.all(languages.map(lang => {
+                return fetch(`../${lang}.json`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`文件不存在`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        successCount++;
+                        return `✅ ${lang}: 有效的JSON格式`;
+                    })
+                    .catch(error => {
+                        failedCount++;
+                        return `❌ ${lang}: ${error.message}`;
+                    });
+            }))
+            .then(resultsArray => {
+                results = resultsArray.join('\n');
+                langFileContent.textContent = `验证完成\n成功: ${successCount}\n失败: ${failedCount}\n\n${results}`;
+                
+                if (failedCount > 0) {
+                    showStatus(`验证完成。有 ${failedCount} 个语言文件存在问题。`, 'error');
+                } else {
+                    showStatus(`验证完成。所有 ${successCount} 个语言文件格式正确。`, 'success');
+                }
+            })
+            .catch(error => {
+                langFileContent.textContent = `验证过程中出错: ${error.message}`;
+                showStatus(`验证过程出错: ${error.message}`, 'error');
+            });
+        }
+        
+        // 显示状态消息
+        function showStatus(message, type) {
+            const statusElement = document.getElementById('status');
+            statusElement.textContent = message;
+            statusElement.className = `status ${type}`;
+            statusElement.style.display = 'block';
+            
+            // 自动隐藏消息
+            setTimeout(() => {
+                statusElement.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html> 

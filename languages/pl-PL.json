@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "categories": "Kategorie gier"
+  },
+  "search": {
+    "placeholder": "Szukaj gier...",
+    "noResults": "Nie znaleziono gier",
+    "backToAll": "Powrót do wszystkich gier",
+    "results": "Wyniki wyszukiwania"
+  },
+  "game": {
+    "backToHome": "Powrót do strony głównej",
+    "allPlatforms": "Kompatybilny ze wszystkimi platformami",
+    "playNow": "Zagraj teraz",
+    "favorite": "Ulubione",
+    "relatedGames": "Powiązane gry",
+    "loading": "Ładowanie danych gry...",
+    "closeGame": "Zamknij grę"
+  },
+  "categories": {
+    "featured": "Polecane gry",
+    "puzzle": "Puzzle",
+    "action": "Akcja",
+    "sports": "Sport",
+    "arcade": "Arcade",
+    "strategy": "Strategia",
+    "racing": "Wyścigi",
+    "shooting": "Strzelanie",
+    "adventure": "Przygoda",
+    "other": "Inne"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Zgadnij Ich Odpowiedź",
+      "braindom": "Braindom",
+      "sort-it": "Posortuj To",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Znajdź Kota",
+      "color-water-sort-3d": "Sortowanie Kolorowej Wody 3D",
+      "peet-sneak": "Skradanie Peeta",
+      "fashion-battle": "Bitwa Modowa",
+      "thief-puzzle": "Łamigłówka Złodzieja",
+      "cube-match": "Dopasowanie Kostek",
+      "toilet-run": "Bieg do Toalety",
+      "pair-up-3d": "Dopasuj Pary 3D",
+      "barbara-amp-kent": "Barbara i Kent",
+      "emoji-fun": "Zabawa Emoji",
+      "cut-the-rope": "Przetnij Linę"
+    },
+    "descriptions": {
+      "guess-their-answer": "Rywalizuj, zgaduj i zdobywaj w Zgadnij Ich Odpowiedź - ostatecznej rozgrywce quizowej!",
+      "braindom": "Rzuć wyzwanie swojemu umysłowi i ucz się historii z Braindom - najlepszym zestawem łamigłówek dla mózgu!",
+      "sort-it": "Sortuj, strategizuj i osiągaj sukces w Posortuj To - ostatecznym wyzwaniu w sortowaniu kolorów!",
+      "color-roll-3d": "Turlaj się do zwycięstwa w Color Roll 3D - ostatecznym wyzwaniu 3D dla umysłu!",
+      "color-fill-3d": "Wypełnij siatkę kolorami, unikając przeszkód w tej wciągającej grze logicznej!",
+      "spot-the-cat": "Odkrywaj ukryte przedmioty w Znajdź Kota - dziwacznej grze logicznej polegającej na wyszukiwaniu i odkrywaniu!",
+      "color-water-sort-3d": "Zanurz się w kolorowym wyzwaniu Sortowanie Kolorowej Wody 3D - gdzie strategia spotyka żywą zabawę!",
+      "peet-sneak": "Skradaj się, planuj strategię i rozwiązuj problemy w Skradanie Peeta - twojej ostatecznej przygodzie w ukrywaniu się!",
+      "fashion-battle": "Pokaż swój styl i podbij wybieg w Bitwie Modowej - gdzie tylko najbardziej stylowi zwyciężą!",
+      "thief-puzzle": "Opanuj skradanie i strategię w Łamigłówce Złodzieja - zostań mistrzem skradania w tej wciągającej grze logicznej 2D!",
+      "cube-match": "Opanuj symbole i podbij kostkę w Dopasowaniu Kostek - ostatecznej sensacji w dopasowywaniu kostek 3D!",
+      "toilet-run": "Biegnij, rysuj i nurkuj w ostatecznym pędzie do toalety w Biegu do Toalety - gdzie dotarcie do toalety staje się ekscytującym sprintem!",
+      "pair-up-3d": "Opanuj sztukę dopasowywania w Dopasuj Pary 3D! Zanurz się w fascynującym świecie dopasowywania par 3D!",
+      "barbara-amp-kent": "Rysuj i nurkuj w najlepszym jak dotąd pędzie do toalety, Barbara i Kent - gdzie ostateczna ulga jest celem końcowym!",
+      "emoji-fun": "Uwolnij swojego wewnętrznego mistrza emoji w Zabawie Emoji - ostatecznej grze logicznej, w której łączysz odpowiednie emoji!",
+      "cut-the-rope": "Nakarm urocze stworki Om Noma cukierkami w tej opartej na fizyce grze logicznej!"
+    }
+  }
+} 

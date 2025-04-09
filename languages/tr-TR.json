@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "categories": "Oyun Kategorileri"
+  },
+  "search": {
+    "placeholder": "Oyun ara...",
+    "noResults": "Oyun bulunamadı",
+    "backToAll": "Tüm oyunlara dön",
+    "results": "Arama sonuçları"
+  },
+  "game": {
+    "backToHome": "Ana sayfaya dön",
+    "allPlatforms": "Tüm platformlarla uyumlu",
+    "playNow": "Şimdi oyna",
+    "favorite": "Favori",
+    "relatedGames": "İlgili oyunlar",
+    "loading": "Oyun verileri yükleniyor...",
+    "closeGame": "Oyunu kapat"
+  },
+  "categories": {
+    "featured": "Öne çıkan oyunlar",
+    "puzzle": "Bulmaca",
+    "action": "Aksiyon",
+    "sports": "Spor",
+    "arcade": "Arcade",
+    "strategy": "Strateji",
+    "racing": "Yarış",
+    "shooting": "Nişancılık",
+    "adventure": "Macera",
+    "other": "Diğer"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Cevaplarını Tahmin Et",
+      "braindom": "Braindom",
+      "sort-it": "Sırala",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Kediyi Bul",
+      "color-water-sort-3d": "Renkli Su Sıralama 3D",
+      "peet-sneak": "Peet'in Gizli Görevi",
+      "fashion-battle": "Moda Savaşı",
+      "thief-puzzle": "Hırsız Bulmacası",
+      "cube-match": "Küp Eşleştirme",
+      "toilet-run": "Tuvalet Koşusu",
+      "pair-up-3d": "3D Eşleştir",
+      "barbara-amp-kent": "Barbara ve Kent",
+      "emoji-fun": "Emoji Eğlencesi",
+      "cut-the-rope": "İpi Kes"
+    },
+    "descriptions": {
+      "guess-their-answer": "Cevaplarını Tahmin Et'te yarış, tahmin et ve fethet - en iyi bilgi yarışması karşılaşması!",
+      "braindom": "Braindom ile zihninizi zorlayın ve tarihi öğrenin - en iyi bulmaca paketi beyin teaser!",
+      "sort-it": "Sırala'da sırala, strateji kur ve başarılı ol - en iyi renk sıralama bulmaca mücadelesi!",
+      "color-roll-3d": "Color Roll 3D'de zafere yuvarlanan yolunuzu açın - en iyi 3D bulmaca mücadelesi!",
+      "color-fill-3d": "Bu etkileyici bulmaca oyununda engelleri aşarken ızgarayı renklerle doldurun!",
+      "spot-the-cat": "Kediyi Bul'da gizli nesneleri keşfedin - tuhaf bir arama ve keşif bulmaca oyunu!",
+      "color-water-sort-3d": "Renkli Su Sıralama 3D'nin renkli mücadelesine dalın - strateji ile canlı eğlencenin buluştuğu yer!",
+      "peet-sneak": "Peet'in Gizli Görevi'nde gizlen, strateji kur ve çöz - en iyi gizlilik maceranız!",
+      "fashion-battle": "Moda Savaşı'nda tarzınızı gösterin ve podyumu fethedin - sadece en şık olanların kazanacağı yer!",
+      "thief-puzzle": "Hırsız Bulmacası'nda gizlilik ve stratejiyi ustalaşın - bu etkileyici 2D bulmaca oyununda en iyi gizlilik ustası olun!",
+      "cube-match": "Küp Eşleştirme'de sembolleri ustalaşın ve küpü fethet - en iyi 3D küp eşleştirme hissi!",
+      "toilet-run": "Tuvalet Koşusu'nda koş, çiz ve en iyi tuvalet koşusuna dal - tuvalete ulaşmanın heyecan verici bir sprint haline geldiği yer!",
+      "pair-up-3d": "3D Eşleştir'de eşleştirme sanatını ustalaşın! 3D çift eşleştirmenin büyüleyici dünyasına dalın!",
+      "barbara-amp-kent": "Barbara ve Kent'te çiz ve şimdiye kadarki en iyi tuvalet koşusuna dal - en iyi rahatlık nihai hedeftir!",
+      "emoji-fun": "Emoji Eğlencesi'nde içinizdeki emoji ustasını serbest bırakın - doğru emojileri bağladığınız en iyi bulmaca oyunu!",
+      "cut-the-rope": "Bu fizik tabanlı bulmaca oyununda sevimli canavar Om Nom'u şekerle besleyin!"
+    }
+  }
+} 

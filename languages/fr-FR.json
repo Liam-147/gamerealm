@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "categories": "Catégories de Jeux"
+  },
+  "search": {
+    "placeholder": "Rechercher des jeux...",
+    "noResults": "Aucun jeu trouvé",
+    "backToAll": "Retour à tous les jeux",
+    "results": "Résultats de la recherche"
+  },
+  "game": {
+    "backToHome": "Retour à l'accueil",
+    "allPlatforms": "Compatible avec toutes les plateformes",
+    "playNow": "Jouer maintenant",
+    "favorite": "Favori",
+    "relatedGames": "Jeux connexes",
+    "loading": "Chargement des données du jeu...",
+    "closeGame": "Fermer le jeu"
+  },
+  "categories": {
+    "featured": "Jeux en vedette",
+    "puzzle": "Puzzle",
+    "action": "Action",
+    "sports": "Sports",
+    "arcade": "Arcade",
+    "strategy": "Stratégie",
+    "racing": "Course",
+    "shooting": "Tir",
+    "adventure": "Aventure",
+    "other": "Autres"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Devinez Leur Réponse",
+      "braindom": "Braindom",
+      "sort-it": "Triez-le",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Repérez le Chat",
+      "color-water-sort-3d": "Tri d'Eau Colorée 3D",
+      "peet-sneak": "Infiltration de Peet",
+      "fashion-battle": "Bataille de Mode",
+      "thief-puzzle": "Puzzle du Voleur",
+      "cube-match": "Cube Match",
+      "toilet-run": "Course aux Toilettes",
+      "pair-up-3d": "Appariement 3D",
+      "barbara-amp-kent": "Barbara et Kent",
+      "emoji-fun": "Amusement Emoji",
+      "cut-the-rope": "Coupe la Corde"
+    },
+    "descriptions": {
+      "guess-their-answer": "Rivalisez, devinez et conquérez dans Devinez Leur Réponse - l'ultime affrontement de quiz!",
+      "braindom": "Défiez votre esprit et apprenez l'histoire avec Braindom - l'ultime casse-tête mental!",
+      "sort-it": "Triez, stratégisez et triomphez dans Triez-le—l'ultime défi de tri par couleur!",
+      "color-roll-3d": "Déroulez votre chemin vers la victoire dans Color Roll 3D - l'ultime défi de puzzle 3D!",
+      "color-fill-3d": "Remplissez la grille de couleurs tout en évitant les obstacles dans ce captivant jeu de puzzle!",
+      "spot-the-cat": "Découvrez des objets cachés dans Repérez le Chat - un jeu de recherche et de découverte espiègle!",
+      "color-water-sort-3d": "Plongez dans le défi coloré de Tri d'Eau Colorée 3D - où stratégie rencontre plaisir vibrant!",
+      "peet-sneak": "Infiltrez, stratégisez et résolvez dans Infiltration de Peet - votre ultime aventure d'infiltration!",
+      "fashion-battle": "Exhibez votre style et conquérez le podium dans Bataille de Mode - où seuls les plus stylés gagneront!",
+      "thief-puzzle": "Maîtrisez l'infiltration et la stratégie dans Puzzle du Voleur - devenez l'ultime maître de l'infiltration dans ce captivant jeu de puzzle 2D!",
+      "cube-match": "Maîtrisez les symboles et conquérez le cube dans Cube Match - l'ultime sensation d'appariement de cubes 3D!",
+      "toilet-run": "Courez, dessinez et plongez dans l'ultime course aux toilettes dans Course aux Toilettes – où atteindre les toilettes est une course palpitante!",
+      "pair-up-3d": "Maîtrisez l'art de l'appariement dans Appariement 3D! Plongez dans le monde captivant de l'appariement en 3D!",
+      "barbara-amp-kent": "Dessinez et plongez dans la meilleure course aux toilettes à ce jour, Barbara et Kent – où le soulagement ultime est le but final!",
+      "emoji-fun": "Libérez votre maître emoji intérieur dans Amusement Emoji - l'ultime jeu de puzzle où vous connectez les bons emojis!",
+      "cut-the-rope": "Nourrissez l'adorable monstre Om Nom avec des bonbons dans ce jeu de puzzle basé sur la physique!"
+    }
+  }
+} 

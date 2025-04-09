@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRealm - 在线游戏平台</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQHVXMJP39"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RQHVXMJP39');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="GameRealm Logo" class="logo">
+            <span class="logo-text">GameRealm</span>
+        </div>
+        <div class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span class="nav-text">首页</span>
+            </a>
+            <div class="category-header">游戏分类</div>
+            <!-- 分类将通过JavaScript动态加载 -->
+        </nav>
+    </div>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 顶部导航栏 -->
+        <header class="top-header">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="搜索游戏...">
+                <button class="search-button" aria-label="搜索">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-suggestions" style="display: none;">
+                    <!-- 搜索建议将通过JavaScript动态加载 -->
+                </div>
+            </div>
+            <div class="language-selector">
+                <button class="language-button" id="languageBtn">
+                    <i class="fas fa-globe"></i> 
+                    <span class="current-language">中文</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option" data-lang="zh-CN"><span class="flag">🇨🇳</span> 中文</div>
+                    <div class="language-option" data-lang="en-US"><span class="flag">🇺🇸</span> English</div>
+                    <div class="language-option" data-lang="ja-JP"><span class="flag">🇯🇵</span> 日本語</div>
+                    <div class="language-option" data-lang="ko-KR"><span class="flag">🇰🇷</span> 한국어</div>
+                    <div class="language-option" data-lang="es-ES"><span class="flag">🇪🇸</span> Español</div>
+                    <div class="language-option" data-lang="fr-FR"><span class="flag">🇫🇷</span> Français</div>
+                    <div class="language-option" data-lang="de-DE"><span class="flag">🇩🇪</span> Deutsch</div>
+                    <div class="language-option" data-lang="ru-RU"><span class="flag">🇷🇺</span> Русский</div>
+                    <div class="language-option" data-lang="pt-BR"><span class="flag">🇧🇷</span> Português</div>
+                    <div class="language-option" data-lang="it-IT"><span class="flag">🇮🇹</span> Italiano</div>
+                    <div class="language-option" data-lang="ar-SA"><span class="flag">🇸🇦</span> العربية</div>
+                    <div class="language-option" data-lang="hi-IN"><span class="flag">🇮🇳</span> हिन्दी</div>
+                    <div class="language-option" data-lang="th-TH"><span class="flag">🇹🇭</span> ไทย</div>
+                    <div class="language-option" data-lang="vi-VN"><span class="flag">🇻🇳</span> Tiếng Việt</div>
+                    <div class="language-option" data-lang="id-ID"><span class="flag">🇮🇩</span> Bahasa Indonesia</div>
+                    <div class="language-option" data-lang="nl-NL"><span class="flag">🇳🇱</span> Nederlands</div>
+                    <div class="language-option" data-lang="tr-TR"><span class="flag">🇹🇷</span> Türkçe</div>
+                    <div class="language-option" data-lang="pl-PL"><span class="flag">🇵🇱</span> Polski</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 游戏分类与展示 -->
+        <div class="game-categories">
+            <!-- 游戏分类和卡片将通过JavaScript动态加载 -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-pulse"></i>
+                <p>正在加载游戏数据...</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html> 

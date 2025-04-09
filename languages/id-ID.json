@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "categories": "Kategori Permainan"
+  },
+  "search": {
+    "placeholder": "Cari permainan...",
+    "noResults": "Tidak ditemukan permainan",
+    "backToAll": "Kembali ke semua permainan",
+    "results": "Hasil pencarian"
+  },
+  "game": {
+    "backToHome": "Kembali ke beranda",
+    "allPlatforms": "Kompatibel dengan semua platform",
+    "playNow": "Main sekarang",
+    "favorite": "Favorit",
+    "relatedGames": "Permainan terkait",
+    "loading": "Memuat data permainan...",
+    "closeGame": "Tutup permainan"
+  },
+  "categories": {
+    "featured": "Permainan unggulan",
+    "puzzle": "Teka-teki",
+    "action": "Aksi",
+    "sports": "Olahraga",
+    "arcade": "Arkade",
+    "strategy": "Strategi",
+    "racing": "Balapan",
+    "shooting": "Menembak",
+    "adventure": "Petualangan",
+    "other": "Lainnya"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Tebak Jawaban Mereka",
+      "braindom": "Braindom",
+      "sort-it": "Urutkan",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Temukan Kucing",
+      "color-water-sort-3d": "Pengurutan Air Berwarna 3D",
+      "peet-sneak": "Peet Mengendap",
+      "fashion-battle": "Pertarungan Fashion",
+      "thief-puzzle": "Teka-teki Pencuri",
+      "cube-match": "Cube Match",
+      "toilet-run": "Lari ke Toilet",
+      "pair-up-3d": "Pasangan 3D",
+      "barbara-amp-kent": "Barbara & Kent",
+      "emoji-fun": "Keseruan Emoji",
+      "cut-the-rope": "Cut the Rope"
+    },
+    "descriptions": {
+      "guess-their-answer": "Bersaing, menebak, dan menaklukkan dalam Tebak Jawaban Mereka - pertarungan kuis terbaik!",
+      "braindom": "Tantang pikiran Anda dan pelajari sejarah dengan Braindom - penguji otak paket teka-teki terbaik!",
+      "sort-it": "Urutkan, strategi, dan berhasil dalam Urutkan - tantangan teka-teki pengurutan warna terbaik!",
+      "color-roll-3d": "Gulingkan jalan Anda menuju kemenangan di Color Roll 3D - tantangan teka-teki 3D terbaik!",
+      "color-fill-3d": "Isi grid dengan warna sambil menghindari rintangan dalam permainan teka-teki yang menarik ini!",
+      "spot-the-cat": "Temukan objek tersembunyi dalam Temukan Kucing - permainan teka-teki pencarian dan penemuan yang aneh!",
+      "color-water-sort-3d": "Selami tantangan berwarna dari Pengurutan Air Berwarna 3D - di mana strategi bertemu kesenangan yang semarak!",
+      "peet-sneak": "Mengendap, strategis, dan pecahkan dalam Peet Mengendap - petualangan pengendapan terbaik Anda!",
+      "fashion-battle": "Pamerkan gaya Anda dan taklukkan catwalk dalam Pertarungan Fashion - di mana hanya yang paling bergaya yang akan menang!",
+      "thief-puzzle": "Kuasai pengendapan dan strategi dalam Teka-teki Pencuri - jadilah penguasa pengendapan terbaik dalam permainan teka-teki 2D yang menarik ini!",
+      "cube-match": "Kuasai simbol dan taklukkan kubus dalam Cube Match - sensasi pencocokan kubus 3D terbaik!",
+      "toilet-run": "Lari, gambar, dan terjun ke dalam permainan lari ke toilet terbaik dalam Lari ke Toilet - di mana mencapai toilet menjadi sprint yang menegangkan!",
+      "pair-up-3d": "Kuasai seni pencocokan dalam Pasangan 3D! Selami dunia pencocokan pasangan 3D yang memikat!",
+      "barbara-amp-kent": "Gambar dan terjun ke dalam permainan lari ke toilet terbaik, Barbara & Kent - di mana kelegaan terbaik adalah tujuan akhir!",
+      "emoji-fun": "Lepaskan penguasa emoji dalam diri Anda dalam Keseruan Emoji - permainan teka-teki terbaik di mana Anda menghubungkan emoji yang tepat!",
+      "cut-the-rope": "Beri makan monster lucu Om Nom dengan permen dalam permainan teka-teki berbasis fisika ini!"
+    }
+  }
+} 

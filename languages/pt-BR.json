@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Início",
+    "categories": "Categorias de Jogos"
+  },
+  "search": {
+    "placeholder": "Buscar jogos...",
+    "noResults": "Nenhum jogo encontrado",
+    "backToAll": "Voltar para todos os jogos",
+    "results": "Resultados da busca"
+  },
+  "game": {
+    "backToHome": "Voltar para o início",
+    "allPlatforms": "Compatível com todas as plataformas",
+    "playNow": "Jogar agora",
+    "favorite": "Favorito",
+    "relatedGames": "Jogos relacionados",
+    "loading": "Carregando dados do jogo...",
+    "closeGame": "Fechar jogo"
+  },
+  "categories": {
+    "featured": "Jogos em destaque",
+    "puzzle": "Quebra-cabeça",
+    "action": "Ação",
+    "sports": "Esportes",
+    "arcade": "Arcade",
+    "strategy": "Estratégia",
+    "racing": "Corrida",
+    "shooting": "Tiro",
+    "adventure": "Aventura",
+    "other": "Outros"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Adivinhe a Resposta Deles",
+      "braindom": "Braindom",
+      "sort-it": "Ordene",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Encontre o Gato",
+      "color-water-sort-3d": "Classificação de Água Colorida 3D",
+      "peet-sneak": "Furtividade de Peet",
+      "fashion-battle": "Batalha de Moda",
+      "thief-puzzle": "Quebra-cabeça do Ladrão",
+      "cube-match": "Cube Match",
+      "toilet-run": "Corrida ao Banheiro",
+      "pair-up-3d": "Pareamento 3D",
+      "barbara-amp-kent": "Barbara e Kent",
+      "emoji-fun": "Diversão com Emojis",
+      "cut-the-rope": "Corte a Corda"
+    },
+    "descriptions": {
+      "guess-their-answer": "Compita, adivinhe e conquiste em Adivinhe a Resposta Deles - o confronto definitivo de quiz!",
+      "braindom": "Desafie sua mente e aprenda história com Braindom - o quebra-cabeça definitivo para o cérebro!",
+      "sort-it": "Ordene, planeje e triunfe em Ordene - o desafio definitivo de classificação por cores!",
+      "color-roll-3d": "Role seu caminho para a vitória em Color Roll 3D - o desafio definitivo de quebra-cabeça 3D!",
+      "color-fill-3d": "Preencha a grade com cores enquanto evita obstáculos neste envolvente jogo de quebra-cabeça!",
+      "spot-the-cat": "Descubra objetos escondidos em Encontre o Gato - um jogo de busca e descoberta divertido!",
+      "color-water-sort-3d": "Mergulhe no desafio colorido de Classificação de Água Colorida 3D - onde estratégia encontra diversão vibrante!",
+      "peet-sneak": "Infiltre-se, planeje e resolva em Furtividade de Peet - sua aventura definitiva de furtividade!",
+      "fashion-battle": "Mostre seu estilo e conquiste a passarela em Batalha de Moda - onde apenas os mais estilosos vencerão!",
+      "thief-puzzle": "Domine a furtividade e a estratégia em Quebra-cabeça do Ladrão - torne-se o mestre definitivo da furtividade neste envolvente jogo de quebra-cabeça 2D!",
+      "cube-match": "Domine os símbolos e conquiste o cubo em Cube Match - a sensação definitiva de combinação de cubos 3D!",
+      "toilet-run": "Corra, desenhe e mergulhe na corrida definitiva ao banheiro em Corrida ao Banheiro - onde chegar ao vaso sanitário se torna uma corrida emocionante!",
+      "pair-up-3d": "Domine a arte de parear em Pareamento 3D! Mergulhe no mundo cativante de pareamento 3D!",
+      "barbara-amp-kent": "Desenhe e mergulhe na melhor corrida ao banheiro até agora, Barbara e Kent - onde o alívio definitivo é o objetivo final!",
+      "emoji-fun": "Liberte seu mestre emoji interior em Diversão com Emojis - o jogo de quebra-cabeça definitivo onde você conecta os emojis certos!",
+      "cut-the-rope": "Alimente o adorável monstro Om Nom com doces neste jogo de quebra-cabeça baseado em física!"
+    }
+  }
+} 

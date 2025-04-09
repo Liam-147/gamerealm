@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "categories": "Spelcategorieën"
+  },
+  "search": {
+    "placeholder": "Zoek spellen...",
+    "noResults": "Geen spellen gevonden",
+    "backToAll": "Terug naar alle spellen",
+    "results": "Zoekresultaten"
+  },
+  "game": {
+    "backToHome": "Terug naar home",
+    "allPlatforms": "Compatibel met alle platforms",
+    "playNow": "Nu spelen",
+    "favorite": "Favoriet",
+    "relatedGames": "Gerelateerde spellen",
+    "loading": "Spelgegevens laden...",
+    "closeGame": "Spel sluiten"
+  },
+  "categories": {
+    "featured": "Uitgelichte spellen",
+    "puzzle": "Puzzel",
+    "action": "Actie",
+    "sports": "Sport",
+    "arcade": "Arcade",
+    "strategy": "Strategie",
+    "racing": "Racen",
+    "shooting": "Schieten",
+    "adventure": "Avontuur",
+    "other": "Overige"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Raad Hun Antwoord",
+      "braindom": "Braindom",
+      "sort-it": "Sorteer Het",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Vind de Kat",
+      "color-water-sort-3d": "Kleur Water Sorteren 3D",
+      "peet-sneak": "Peet Sluipt",
+      "fashion-battle": "Mode Strijd",
+      "thief-puzzle": "Dief Puzzel",
+      "cube-match": "Cube Match",
+      "toilet-run": "Toilet Ren",
+      "pair-up-3d": "Koppel 3D",
+      "barbara-amp-kent": "Barbara & Kent",
+      "emoji-fun": "Emoji Plezier",
+      "cut-the-rope": "Knip het Touw"
+    },
+    "descriptions": {
+      "guess-their-answer": "Strijd, raad en verover in Raad Hun Antwoord - de ultieme quizconfrontatie!",
+      "braindom": "Daag je geest uit en leer geschiedenis met Braindom - de ultieme puzzelpakket breinbreker!",
+      "sort-it": "Sorteer, strategiseer en slaag in Sorteer Het - de ultieme kleurensorteerpuzzeluitdaging!",
+      "color-roll-3d": "Rol je weg naar de overwinning in Color Roll 3D - de ultieme 3D-puzzeluitdaging!",
+      "color-fill-3d": "Vul het raster met kleuren terwijl je obstakels vermijdt in dit boeiende puzzelspel!",
+      "spot-the-cat": "Ontdek verborgen objecten in Vind de Kat - een grillig zoek- en ontdekkingspuzzelspel!",
+      "color-water-sort-3d": "Duik in de kleurrijke uitdaging van Kleur Water Sorteren 3D - waar strategie levendig plezier ontmoet!",
+      "peet-sneak": "Sluip, strategiseer en los op in Peet Sluipt - je ultieme stealth-avontuur!",
+      "fashion-battle": "Toon je stijl en verover de catwalk in Mode Strijd - waar alleen de meest stijlvolle zullen winnen!",
+      "thief-puzzle": "Beheers stealth en strategie in Dief Puzzel - word de ultieme sluipmeester in dit boeiende 2D-puzzelspel!",
+      "cube-match": "Beheers de symbolen en verover de kubus in Cube Match - de ultieme 3D-kubuskoppelsensatie!",
+      "toilet-run": "Ren, teken en duik in de ultieme toilethaast in Toilet Ren - waar het bereiken van het toilet een spannende sprint wordt!",
+      "pair-up-3d": "Beheers de kunst van het koppelen in Koppel 3D! Duik in de boeiende wereld van 3D-paarkoppeling!",
+      "barbara-amp-kent": "Teken en duik in de beste toilethaast tot nu toe, Barbara & Kent - waar ultieme opluchting het uiteindelijke doel is!",
+      "emoji-fun": "Laat je innerlijke emoji-meester los in Emoji Plezier - het ultieme puzzelspel waar je de juiste emoji's verbindt!",
+      "cut-the-rope": "Voed het schattige monster Om Nom met snoep in dit op fysica gebaseerde puzzelspel!"
+    }
+  }
+} 

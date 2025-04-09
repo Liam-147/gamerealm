@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "首页",
+    "categories": "游戏分类"
+  },
+  "search": {
+    "placeholder": "搜索游戏...",
+    "noResults": "没有找到相关游戏",
+    "backToAll": "返回全部游戏",
+    "results": "搜索结果"
+  },
+  "game": {
+    "backToHome": "返回首页",
+    "allPlatforms": "全平台支持",
+    "playNow": "开始游戏",
+    "favorite": "收藏",
+    "relatedGames": "相关游戏推荐",
+    "loading": "正在加载游戏数据...",
+    "closeGame": "关闭游戏"
+  },
+  "categories": {
+    "featured": "推荐游戏",
+    "puzzle": "益智",
+    "action": "动作",
+    "sports": "体育",
+    "arcade": "街机",
+    "strategy": "策略",
+    "racing": "赛车",
+    "shooting": "射击",
+    "adventure": "冒险",
+    "other": "其他"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "猜猜他们的答案",
+      "braindom": "头脑王者",
+      "sort-it": "颜色分类",
+      "color-roll-3d": "色彩卷轴3D",
+      "color-fill-3d": "色彩填充3D",
+      "spot-the-cat": "寻找猫咪",
+      "color-water-sort-3d": "彩色水排序3D",
+      "peet-sneak": "皮特的潜行",
+      "fashion-battle": "时尚对决",
+      "thief-puzzle": "小偷解谜",
+      "cube-match": "魔方匹配",
+      "toilet-run": "厕所冲刺",
+      "pair-up-3d": "3D配对",
+      "barbara-amp-kent": "芭芭拉与肯特",
+      "emoji-fun": "表情符号乐趣",
+      "cut-the-rope": "割绳子"
+    },
+    "descriptions": {
+      "guess-their-answer": "在猜猜他们的答案中竞争、猜测并征服 - 这是终极知识竞赛对决！",
+      "braindom": "在头脑王者中挑战你的思维并学习历史 - 这是终极益智挑战包！",
+      "sort-it": "在颜色分类中排序、策略并成功 - 这是终极色彩分类益智挑战！",
+      "color-roll-3d": "在色彩卷轴3D中展开你的胜利之路 - 这是终极3D益智挑战！",
+      "color-fill-3d": "在这款引人入胜的益智游戏中，用颜色填充网格，同时避开障碍物！",
+      "spot-the-cat": "在寻找猫咪中发现隐藏的物体 - 一款异想天开的搜索与发现益智游戏！",
+      "color-water-sort-3d": "潜入彩色水排序3D的多彩挑战 - 这里策略与鲜艳的乐趣相遇！",
+      "peet-sneak": "在皮特的潜行中潜行、策略并解决问题 - 你的终极潜行冒险！",
+      "fashion-battle": "在时尚对决中展示你的风格并征服走秀 - 只有最时尚的人才能获胜！",
+      "thief-puzzle": "在小偷解谜中掌握潜行和战略 - 在这款引人入胜的2D益智游戏中成为终极潜行大师！",
+      "cube-match": "在魔方匹配中掌握符号并征服魔方 - 终极3D魔方匹配游戏！",
+      "toilet-run": "在厕所冲刺中赛跑、绘画并潜入终极洗手间冲刺 - 到达厕所成为一场惊险的冲刺！",
+      "pair-up-3d": "在3D配对中掌握匹配艺术！潜入3D配对的迷人世界！",
+      "barbara-amp-kent": "在芭芭拉与肯特中绘画并潜入迄今最好的洗手间冲刺游戏 - 终极解脱是最终目标！",
+      "emoji-fun": "在表情符号乐趣中释放你内心的表情符号大师 - 这是一款你需要连接正确表情符号的终极益智游戏！",
+      "cut-the-rope": "在这款基于物理的益智游戏中，用糖果喂养可爱的怪物小绿！"
+    }
+  }
+} 

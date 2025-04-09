@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "categories": "Game Categories"
+  },
+  "search": {
+    "placeholder": "Search games...",
+    "noResults": "No games found",
+    "backToAll": "Back to all games",
+    "results": "Search Results"
+  },
+  "game": {
+    "backToHome": "Back to Home",
+    "allPlatforms": "Compatible with all platforms",
+    "playNow": "Play Now",
+    "favorite": "Favorite",
+    "relatedGames": "Related Games",
+    "loading": "Loading game data...",
+    "closeGame": "Close Game"
+  },
+  "categories": {
+    "featured": "Featured Games",
+    "puzzle": "Puzzle",
+    "action": "Action",
+    "sports": "Sports",
+    "arcade": "Arcade",
+    "strategy": "Strategy",
+    "racing": "Racing",
+    "shooting": "Shooting",
+    "adventure": "Adventure",
+    "other": "Other"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Guess Their Answer",
+      "braindom": "Braindom",
+      "sort-it": "Sort It",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Spot the Cat",
+      "color-water-sort-3d": "Color Water Sort 3D",
+      "peet-sneak": "Peet Sneak",
+      "fashion-battle": "Fashion Battle",
+      "thief-puzzle": "Thief Puzzle",
+      "cube-match": "Cube Match",
+      "toilet-run": "Toilet Run",
+      "pair-up-3d": "Pair Up 3D",
+      "barbara-amp-kent": "Barbara & Kent",
+      "emoji-fun": "Emoji Fun",
+      "cut-the-rope": "Cut the Rope"
+    },
+    "descriptions": {
+      "guess-their-answer": "Compete, guess and conquer in Guess Their Answer - the ultimate quiz showdown!",
+      "braindom": "Challenge your mind and learn history with Braindom - the ultimate puzzle pack brain teaser!",
+      "sort-it": "Sort, strategize and succeed in Sort It—the ultimate color sorting puzzle challenge!",
+      "color-roll-3d": "Roll your way to victory in Color Roll 3D - the ultimate 3D puzzle challenge!",
+      "color-fill-3d": "Fill the grid with colors while avoiding obstacles in this engaging puzzle game!",
+      "spot-the-cat": "Discover hidden objects in Spot the Cat - a whimsical search and discovery puzzle game!",
+      "color-water-sort-3d": "Dive into the colorful challenge of Color Water Sort 3D - where strategy meets vibrant fun!",
+      "peet-sneak": "Sneak, strategize and solve in Peet Sneak - your ultimate stealth adventure!",
+      "fashion-battle": "Show off your style and conquer the catwalk in Fashion Battle - where only the most stylish will win!",
+      "thief-puzzle": "Master stealth and strategy in Thief Puzzle - become the ultimate sneaking master in this engaging 2D puzzle game!",
+      "cube-match": "Master the symbols and conquer the cube in Cube Match - the ultimate 3D cube matching sensation!",
+      "toilet-run": "Run, draw, and dive into the ultimate bathroom rush in Toilet Run – where reaching the toilet becomes a thrilling dash!",
+      "pair-up-3d": "Master the art of matching in Pair Up 3D! Dive into the captivating world of 3D pair matching!",
+      "barbara-amp-kent": "Draw and dive into the best bathroom rush yet, Barbara & Kent – where ultimate relief is the final goal!",
+      "emoji-fun": "Unleash your inner emoji master in Emoji Fun - the ultimate puzzle game where you connect the right emojis!",
+      "cut-the-rope": "Feed the adorable monster Om Nom with candy in this physics-based puzzle game!"
+    }
+  }
+} 

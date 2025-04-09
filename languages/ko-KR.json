@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "홈",
+    "categories": "게임 카테고리"
+  },
+  "search": {
+    "placeholder": "게임 검색...",
+    "noResults": "게임을 찾을 수 없습니다",
+    "backToAll": "모든 게임으로 돌아가기",
+    "results": "검색 결과"
+  },
+  "game": {
+    "backToHome": "홈으로 돌아가기",
+    "allPlatforms": "모든 플랫폼 지원",
+    "playNow": "지금 플레이",
+    "favorite": "즐겨찾기",
+    "relatedGames": "관련 게임",
+    "loading": "게임 데이터 로딩 중...",
+    "closeGame": "게임 닫기"
+  },
+  "categories": {
+    "featured": "추천 게임",
+    "puzzle": "퍼즐",
+    "action": "액션",
+    "sports": "스포츠",
+    "arcade": "아케이드",
+    "strategy": "전략",
+    "racing": "레이싱",
+    "shooting": "슈팅",
+    "adventure": "어드벤처",
+    "other": "기타"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "답을 맞춰보세요",
+      "braindom": "브레인돔",
+      "sort-it": "정렬하기",
+      "color-roll-3d": "컬러 롤 3D",
+      "color-fill-3d": "컬러 필 3D",
+      "spot-the-cat": "고양이 찾기",
+      "color-water-sort-3d": "컬러 워터 소트 3D",
+      "peet-sneak": "피트의 잠입",
+      "fashion-battle": "패션 배틀",
+      "thief-puzzle": "도둑 퍼즐",
+      "cube-match": "큐브 매치",
+      "toilet-run": "화장실 달리기",
+      "pair-up-3d": "페어 업 3D",
+      "barbara-amp-kent": "바바라와 켄트",
+      "emoji-fun": "이모지 재미",
+      "cut-the-rope": "로프 자르기"
+    },
+    "descriptions": {
+      "guess-their-answer": "답을 맞춰보세요에서 경쟁하고, 추측하고, 정복하세요 - 궁극의 퀴즈 대결!",
+      "braindom": "브레인돔으로 당신의 마음을 도전하고 역사를 배우세요 - 궁극의 퍼즐 팩 두뇌 티저!",
+      "sort-it": "정렬하기에서 정렬하고, 전략을 세우고, 성공하세요 - 궁극의 색상 정렬 퍼즐 도전!",
+      "color-roll-3d": "컬러 롤 3D에서 승리의 길을 펼치세요 - 궁극의 3D 퍼즐 도전!",
+      "color-fill-3d": "이 매력적인 퍼즐 게임에서 장애물을 피하면서 그리드를 색으로 채우세요!",
+      "spot-the-cat": "고양이 찾기에서 숨겨진 물체를 발견하세요 - 기발한 검색 및 발견 퍼즐 게임!",
+      "color-water-sort-3d": "컬러 워터 소트 3D의 다채로운 도전에 뛰어들어보세요 - 전략과 활기찬 재미가 만나는 곳!",
+      "peet-sneak": "피트의 잠입에서 잠입하고, 전략을 세우고, 문제를 해결하세요 - 당신의 궁극의 스텔스 어드벤처!",
+      "fashion-battle": "패션 배틀에서 당신의 스타일을 뽐내고 캣워크를 정복하세요 - 가장 스타일리시한 사람만이 승리할 것입니다!",
+      "thief-puzzle": "도둑 퍼즐에서 스텔스와 전략을 마스터하세요 - 이 매력적인 2D 퍼즐 게임에서 궁극의 스텔스 마스터가 되세요!",
+      "cube-match": "큐브 매치에서 심볼을 마스터하고 큐브를 정복하세요 - 궁극의 3D 큐브 매칭 게임!",
+      "toilet-run": "화장실 달리기에서 달리고, 그리고, 궁극의 화장실 급행에 뛰어들어보세요 - 화장실에 도달하는 것이 스릴 넘치는 대시가 됩니다!",
+      "pair-up-3d": "페어 업 3D에서 매칭의 예술을 마스터하세요! 3D 페어 매칭의 매혹적인 세계에 뛰어들어보세요!",
+      "barbara-amp-kent": "바바라와 켄트에서 그리고, 지금까지 최고의 화장실 급행에 뛰어들어보세요 - 궁극의 안도감이 최종 목표입니다!",
+      "emoji-fun": "이모지 재미에서 당신의 내면의 이모지 마스터를 해방하세요 - 올바른 이모지를 연결해야 하는 궁극의 퍼즐 게임!",
+      "cut-the-rope": "이 물리 기반 퍼즐 게임에서 귀여운 몬스터 옴놈에게 사탕을 먹이세요!"
+    }
+  }
+} 

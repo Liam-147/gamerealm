@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "categories": "Spielkategorien"
+  },
+  "search": {
+    "placeholder": "Spiele suchen...",
+    "noResults": "Keine Spiele gefunden",
+    "backToAll": "Zurück zu allen Spielen",
+    "results": "Suchergebnisse"
+  },
+  "game": {
+    "backToHome": "Zurück zur Startseite",
+    "allPlatforms": "Kompatibel mit allen Plattformen",
+    "playNow": "Jetzt spielen",
+    "favorite": "Favorit",
+    "relatedGames": "Ähnliche Spiele",
+    "loading": "Spieldaten werden geladen...",
+    "closeGame": "Spiel schließen"
+  },
+  "categories": {
+    "featured": "Empfohlene Spiele",
+    "puzzle": "Puzzle",
+    "action": "Action",
+    "sports": "Sport",
+    "arcade": "Arcade",
+    "strategy": "Strategie",
+    "racing": "Rennen",
+    "shooting": "Shooter",
+    "adventure": "Abenteuer",
+    "other": "Andere"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Rate ihre Antwort",
+      "braindom": "Braindom",
+      "sort-it": "Sortiere es",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Finde die Katze",
+      "color-water-sort-3d": "Farbwasser-Sortierung 3D",
+      "peet-sneak": "Peets Schleichmission",
+      "fashion-battle": "Modeschlacht",
+      "thief-puzzle": "Dieb-Puzzle",
+      "cube-match": "Cube Match",
+      "toilet-run": "Toilettenlauf",
+      "pair-up-3d": "Paar-Finden 3D",
+      "barbara-amp-kent": "Barbara & Kent",
+      "emoji-fun": "Emoji-Spaß",
+      "cut-the-rope": "Schneide das Seil"
+    },
+    "descriptions": {
+      "guess-their-answer": "Tritt an, rate und erobere in Rate ihre Antwort - das ultimative Quiz-Duell!",
+      "braindom": "Fordere deinen Verstand heraus und lerne Geschichte mit Braindom - der ultimative Puzzle-Pack Gehirntrainer!",
+      "sort-it": "Sortiere, plane und siege in Sortiere es - die ultimative Farbsortier-Puzzle-Herausforderung!",
+      "color-roll-3d": "Rolle deinen Weg zum Sieg in Color Roll 3D - die ultimative 3D-Puzzle-Herausforderung!",
+      "color-fill-3d": "Fülle das Raster mit Farben und vermeide dabei Hindernisse in diesem fesselnden Puzzle-Spiel!",
+      "spot-the-cat": "Entdecke versteckte Objekte in Finde die Katze - ein skurriles Such- und Entdeckungs-Puzzle-Spiel!",
+      "color-water-sort-3d": "Tauche ein in die farbenfrohe Herausforderung von Farbwasser-Sortierung 3D - wo Strategie auf lebendigen Spaß trifft!",
+      "peet-sneak": "Schleiche, plane und löse in Peets Schleichmission - dein ultimatives Stealth-Abenteuer!",
+      "fashion-battle": "Zeige deinen Stil und erobere den Laufsteg in Modeschlacht - wo nur die Stylischsten gewinnen werden!",
+      "thief-puzzle": "Meistere Heimlichkeit und Strategie im Dieb-Puzzle - werde zum ultimativen Schleichmeister in diesem fesselnden 2D-Puzzle-Spiel!",
+      "cube-match": "Beherrsche die Symbole und erobere den Würfel in Cube Match - die ultimative 3D-Würfel-Matching-Sensation!",
+      "toilet-run": "Laufe, zeichne und stürze dich in den ultimativen Toiletten-Sprint in Toilettenlauf - wo der Weg zur Toilette zu einem aufregenden Wettlauf wird!",
+      "pair-up-3d": "Meistere die Kunst des Paare-Findens in Paar-Finden 3D! Tauche ein in die faszinierende Welt des 3D-Paare-Matchings!",
+      "barbara-amp-kent": "Zeichne und stürze dich in den bisher besten Toiletten-Sprint, Barbara & Kent - wo die ultimative Erleichterung das Endziel ist!",
+      "emoji-fun": "Entfessele deinen inneren Emoji-Meister in Emoji-Spaß - das ultimative Puzzle-Spiel, in dem du die richtigen Emojis verbindest!",
+      "cut-the-rope": "Füttere das niedliche Monster Om Nom mit Süßigkeiten in diesem physikbasierten Puzzle-Spiel!"
+    }
+  }
+} 

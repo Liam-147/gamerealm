@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "categories": "Thể loại trò chơi"
+  },
+  "search": {
+    "placeholder": "Tìm kiếm trò chơi...",
+    "noResults": "Không tìm thấy trò chơi",
+    "backToAll": "Quay lại tất cả trò chơi",
+    "results": "Kết quả tìm kiếm"
+  },
+  "game": {
+    "backToHome": "Quay lại trang chủ",
+    "allPlatforms": "Tương thích với tất cả các nền tảng",
+    "playNow": "Chơi ngay",
+    "favorite": "Yêu thích",
+    "relatedGames": "Trò chơi liên quan",
+    "loading": "Đang tải dữ liệu trò chơi...",
+    "closeGame": "Đóng trò chơi"
+  },
+  "categories": {
+    "featured": "Trò chơi nổi bật",
+    "puzzle": "Giải đố",
+    "action": "Hành động",
+    "sports": "Thể thao",
+    "arcade": "Arcade",
+    "strategy": "Chiến thuật",
+    "racing": "Đua xe",
+    "shooting": "Bắn súng",
+    "adventure": "Phiêu lưu",
+    "other": "Khác"
+  },
+  "gameTranslations": {
+    "titles": {
+      "guess-their-answer": "Đoán Câu Trả Lời Của Họ",
+      "braindom": "Braindom",
+      "sort-it": "Sắp Xếp Nó",
+      "color-roll-3d": "Color Roll 3D",
+      "color-fill-3d": "Color Fill 3D",
+      "spot-the-cat": "Tìm Mèo",
+      "color-water-sort-3d": "Sắp Xếp Nước Màu 3D",
+      "peet-sneak": "Peet Lẻn Vào",
+      "fashion-battle": "Đấu Trường Thời Trang",
+      "thief-puzzle": "Câu Đố Trộm",
+      "cube-match": "Ghép Khối Lập Phương",
+      "toilet-run": "Chạy Đi Vệ Sinh",
+      "pair-up-3d": "Ghép Đôi 3D",
+      "barbara-amp-kent": "Barbara và Kent",
+      "emoji-fun": "Vui Vẻ Với Emoji",
+      "cut-the-rope": "Cắt Dây"
+    },
+    "descriptions": {
+      "guess-their-answer": "Cạnh tranh, đoán và chinh phục trong Đoán Câu Trả Lời Của Họ - cuộc đối đầu câu đố tối thượng!",
+      "braindom": "Thử thách tâm trí và học lịch sử với Braindom - bộ câu đố kích thích não bộ tối thượng!",
+      "sort-it": "Sắp xếp, lập chiến lược và thành công trong Sắp Xếp Nó - thử thách giải đố sắp xếp màu sắc tối thượng!",
+      "color-roll-3d": "Lăn đường đến chiến thắng trong Color Roll 3D - thử thách giải đố 3D tối thượng!",
+      "color-fill-3d": "Lấp đầy lưới với màu sắc trong khi tránh chướng ngại vật trong trò chơi giải đố hấp dẫn này!",
+      "spot-the-cat": "Khám phá các vật thể ẩn trong Tìm Mèo - một trò chơi giải đố tìm kiếm và khám phá kỳ quặc!",
+      "color-water-sort-3d": "Đắm mình vào thử thách đầy màu sắc của Sắp Xếp Nước Màu 3D - nơi chiến lược gặp niềm vui sống động!",
+      "peet-sneak": "Lẻn vào, lập chiến lược và giải quyết trong Peet Lẻn Vào - cuộc phiêu lưu lén lút tối thượng của bạn!",
+      "fashion-battle": "Khoe phong cách và chinh phục sàn diễn trong Đấu Trường Thời Trang - nơi chỉ những người sành điệu nhất sẽ chiến thắng!",
+      "thief-puzzle": "Làm chủ sự lén lút và chiến lược trong Câu Đố Trộm - trở thành bậc thầy lẻn lút tối thượng trong trò chơi giải đố 2D hấp dẫn này!",
+      "cube-match": "Làm chủ các biểu tượng và chinh phục khối lập phương trong Ghép Khối Lập Phương - cảm giác ghép khối lập phương 3D tối thượng!",
+      "toilet-run": "Chạy, vẽ và lao vào cuộc đua vệ sinh tối thượng trong Chạy Đi Vệ Sinh - nơi việc đến được nhà vệ sinh trở thành một cuộc chạy đua hồi hộp!",
+      "pair-up-3d": "Làm chủ nghệ thuật ghép đôi trong Ghép Đôi 3D! Đắm mình vào thế giới ghép đôi 3D quyến rũ!",
+      "barbara-amp-kent": "Vẽ và lao vào cuộc đua vệ sinh tuyệt nhất từ trước đến nay, Barbara và Kent - nơi sự nhẹ nhõm tối thượng là mục tiêu cuối cùng!",
+      "emoji-fun": "Giải phóng bậc thầy emoji bên trong bạn trong Vui Vẻ Với Emoji - trò chơi giải đố tối thượng nơi bạn kết nối đúng emoji!",
+      "cut-the-rope": "Cho quái vật đáng yêu Om Nom ăn kẹo trong trò chơi giải đố dựa trên vật lý này!"
+    }
+  }
+} 
